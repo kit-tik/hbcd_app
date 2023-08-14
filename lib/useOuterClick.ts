@@ -3,7 +3,7 @@ import {useRef, useEffect, MutableRefObject } from 'react'
   Custom Hook
 */
 export function useOuterClick(callback:Function) {
-    const innerRef = useRef<HTMLElement>(null) 
+    const innerRef = useRef<HTMLButtonElement>(null) 
     const callbackRef = useRef() as MutableRefObject<Function | null>;
   
     // set current callback in ref, before second useEffect uses it
