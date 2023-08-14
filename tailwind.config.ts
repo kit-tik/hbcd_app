@@ -17,7 +17,7 @@ module.exports = {
         'secondary': '#FF6F61',
         'accent': '#FFD166'
       },
-      typography(theme) {
+      typography({theme}) {
         return {
           dark: {
             css: {
